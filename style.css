@@ -1,39 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@600&display=swap');
 *
 {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
+body
+{
     min-height: 100vh;
-    background: linear-gradient(#8B0000,#B22222)
+    background: linear-gradient(white, cyan);
 }
-#header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
+
+nav
+{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-height: 15vh;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 10%;
+    
 }
 
-#header ul {
+.logo
+{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 7%;
+    width: 7%;
 }
 
-#header ul li {
-    list-style: none;
-    margin-left: 20px;
+.nav_links
+{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 50%;
 }
 
-#header ul li a {
+.nav_links a
+{
+    transition: all 0.3s ease;
     text-decoration: none;
-    padding: 6px 15px;
-    color:aquamarine;
+    color: rgb(0, 117, 138);
+    letter-spacing: 1px;
+    font-size: 17px;
 }
+
+.nav_links li
+{
+    list-style: none;
+    
+}
+
+.nav_links a:hover
+{
+    transition: all 0.3s ease;
+    border-radius: 999px;
+    padding: 8px 18px;
+    border: 3px solid darkblue; 
+    color: rgb(4, 22, 78);
+}
+
+
+
+button
+{
+    font-family: 'Montserrat', sans-serif;
+    background: darkcyan;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    cursor: pointer;
+    width: fit-content;
+    border: 0;
+}
+
+button:hover
+{
+    transition: all 0.3s ease;
+    background-color: darkblue;
+}
+
