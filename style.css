@@ -88,3 +88,46 @@ button:hover
     background-color: darkblue;
 }
 
+@keyframes changeColorOnLoad
+{
+    0%
+    {
+        transform: translateX(-100%);
+        color:rgb(123, 225, 243)
+        
+    }
+
+    100%
+    {
+        transform: translateX(0);
+        color:rgb(103, 127, 197)
+    }
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(55, 55, 146);
+    min-height: 15vh;
+    animation: 1s ease 0s 1 changeColorOnLoad;
+    text-align: center;
+    color: rgb(103, 127, 197);
+    padding: 30px 10%;
+}
+
+.images
+{
+    width: auto;
+    height: auto;
+}
+
+.images img
+{
+    display: block;
+    width: 10%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+
+}
