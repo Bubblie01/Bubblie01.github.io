@@ -93,25 +93,25 @@ button:hover
     0%
     {
         transform: translateX(-100%);
-        color:rgb(123, 225, 243)
+        color:rgb(0, 0, 0)
         
     }
 
     100%
     {
         transform: translateX(0);
-        color:rgb(103, 127, 197)
+        color:rgb(255, 255, 255)
     }
 }
 
-h1
+.about-me h1, p
 {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(55, 55, 146);
+    background-color: rgb(55, 153, 170);
     min-height: 15vh;
     animation: 1s ease 0s 1 changeColorOnLoad;
     text-align: center;
-    color: rgb(103, 127, 197);
+    color: rgb(255, 255, 255);
     padding: 30px 10%;
 }
 
